@@ -3,6 +3,20 @@ import os
 import re
 import shutil
 import time
+from tqdm import tqdm
+import subprocess
+
+def install_dependencies():
+    try:
+        import tqdm
+        print("\033[92mtqdm already installed.\033[0m")
+    except ImportError:
+        print("\033[93mtqdm not found. Installing...\033[0m")
+        subprocess.run(["pip", "install", "tqdm"])
+        print("\033[92mtqdm installed successfully.\033[0m")
+
+# Call the function at the beginning of the script
+install_dependencies()
 
 # Function to apply regex filter to data
 def apply_filter(data, regex_filter, is_removal_filter=False):
@@ -152,11 +166,15 @@ def run_script():
 
         # Group the filtered items by mod ID
         mod_groups = {}
-        for item in filtered_data:
+        for idx, item in enumerate(tqdm(filtered_data, desc='Grouping by Mod ID', unit='item')):
             mod_id, item_id = item['id'].split(':')
             if mod_id not in mod_groups:
                 mod_groups[mod_id] = []
             mod_groups[mod_id].append(item['id'])
+
+            # Pause after processing every 10 files to avoid write limits
+            if (idx + 1) % 50 == 0:
+                time.sleep(0.00001)
 
         # Save each mod group to a separate text file
         for mod_id, item_ids in mod_groups.items():

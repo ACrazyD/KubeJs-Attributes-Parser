@@ -28,6 +28,26 @@ Im rusty as JavaScript - so expect some odditys as i did use some AI to fix thin
 3. Run the script in a terminal or command prompt.
 4. Follow the on-screen instructions to select input and output folders and apply filters.
 
+## Regex Filtering:
+
+The KubeJS Attributes Parser script supports powerful regex filtering options for refining the extracted data. When prompted for filtering options, you can provide regular expressions to customize the filtering process.
+
+    Regular Filtering: Enter a regex filter to include items that match the specified pattern. For example, to filter items containing the word "sword" in their ID, you can use the regex filter: sword.
+
+Enter the regex filter for regular filtering (default: .*):
+
+Removal Filtering: To exclude specific items from the output based on a regex pattern, use the removal filter. By default, the removal filter is set to ^$, which essentially removes nothing. Adjust this filter to exclude items that match the specified pattern. For instance, to exclude items with IDs starting with "debug," you can use the removal filter: ^debug.
+
+    Enter the regex filter for removal filtering (default: ^$):
+
+Examples:
+
+    Include all items with "sword" in their ID:
+        Regular Filter: sword
+
+    Exclude items with IDs starting with "debug":
+        Removal Filter: ^debug
+
 ## License
 
 This script is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, and distribute it as needed.
