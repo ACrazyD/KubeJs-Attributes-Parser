@@ -16,6 +16,7 @@ Im rusty as JavaScript - so expect some odditys as i did use some AI to fix thin
 - Python 3.x
 - Required Python modules: `json`, `os`, `re`, `shutil`, `time`, `tqdm` - Script *Should* install if missing, apon request of user
 - [ProbeJS](https://www.curseforge.com/minecraft/mc-mods/probejs) mod installed in the Minecraft client to generate the required data files for input.
+- [KubeJS](https://www.curseforge.com/minecraft/mc-mods/kubejs) Depentent for ProbeJS
 
 - Tested with output files for fluid/items on 1.20.2 Only - Other Versions May Not Work
 
@@ -32,5 +33,5 @@ Im rusty as JavaScript - so expect some odditys as i did use some AI to fix thin
 This script is licensed under the [MIT License](LICENSE.md). Feel free to use, modify, and distribute it as needed.
 ## Issues
 
-If you encounter any issues or have suggestions, please create an issue [here](https://github.com/acrazyd/kubejsattributesparser/issues).
+If you encounter any issues or have suggestions, please create an issue [here](https://github.com/ACrazyD/KubeJs-Attributes-Parser/issues).
 
