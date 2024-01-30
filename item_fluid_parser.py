@@ -6,6 +6,7 @@ import time
 from tqdm import tqdm
 import subprocess
 
+# Function to install missing dependencies
 def install_dependencies():
     try:
         import tqdm
