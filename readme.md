@@ -2,7 +2,7 @@
 
 ## Overview
 
-The KubeJS Attributes Parser is a Python script designed to filter and organize data from JSON files related to Minecraft mods. It provides a customizable way to filter items and fluids based on regular expressions and outputs the results in a structured manner.
+The KubeJS Attributes Parser is a Python script designed to filter and organize data from JSON files created with ProbeJS Dumps. It provides a customizable way to filter items and fluids based on regular expressions and outputs the results in a structured manner.
 
 Im rusty as JavaScript - so expect some odditys as i did use some AI to fix things when i got stuck.
 
