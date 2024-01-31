@@ -54,4 +54,5 @@ This script is licensed under the [MIT License](LICENSE.md). Feel free to use, m
 ## Issues
 
 If you encounter any issues or have suggestions, please create an issue [here](https://github.com/ACrazyD/KubeJs-Attributes-Parser/issues).
+Or Contact us on [Discord](https://discord.gg/UMhmuKMb9N)
 
