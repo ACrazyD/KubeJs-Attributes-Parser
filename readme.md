@@ -30,6 +30,8 @@ Im rusty as JavaScript - so expect some odditys as i did use some AI to fix thin
 
 ## Regex Filtering:
 
+Quick Resource [Regex Filter Generator](https://regex-generator.olafneumann.org/?sampleText=%7B%22maxStackSize%22%3A64%2C%22maxDamage%22%3A0%2C%22localized%22%3A%22Example%20Item%22%2C%22block%22%3A%7B%22crop%22%3Afalse%7D%2C%22id%22%3A%22mod_id%3Aitem_or_fluid_name%22%7D%2C&flags=i)
+
 The KubeJS Attributes Parser script supports powerful regex filtering options for refining the extracted data. When prompted for filtering options, you can provide regular expressions to customize the filtering process.
 
     Regular Filtering: Enter a regex filter to include items that match the specified pattern. For example, to filter items containing the word "sword" in their ID, you can use the regex filter: sword.
